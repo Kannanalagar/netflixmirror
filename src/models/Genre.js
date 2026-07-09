@@ -18,7 +18,7 @@ const GenreSchema = new mongoose.Schema(
 );
 
 GenreSchema.pre("save", function (next) {
-  if (this.isModified("name")) {
+  if (this.isModified("name") && !this.slug) {
     this.slug = this.name
       .toLowerCase()
       .replace(/[^a-z0-9]+/g, "-")

@@ -60,7 +60,7 @@ const TVShowSchema = new mongoose.Schema(
     },
     maturityRating: {
       type: String,
-      enum: ["G", "PG", "PG-13", "R", "NC-17"],
+      enum: ["G", "PG", "PG-13", "R", "NC-17", "TV-Y", "TV-Y7", "TV-G", "TV-PG", "TV-14", "TV-MA"],
       default: "PG-13",
     },
     isTrending: {

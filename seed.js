@@ -8,16 +8,16 @@ const TVShow = require("./src/models/TVShow");
 const User = require("./src/models/User");
 
 const genres = [
-  { name: "Action" },
-  { name: "Comedy" },
-  { name: "Drama" },
-  { name: "Horror" },
-  { name: "Sci-Fi" },
-  { name: "Thriller" },
-  { name: "Romance" },
-  { name: "Animation" },
-  { name: "Documentary" },
-  { name: "Family" },
+  { name: "Action", slug: "action" },
+  { name: "Comedy", slug: "comedy" },
+  { name: "Drama", slug: "drama" },
+  { name: "Horror", slug: "horror" },
+  { name: "Sci-Fi", slug: "sci-fi" },
+  { name: "Thriller", slug: "thriller" },
+  { name: "Romance", slug: "romance" },
+  { name: "Animation", slug: "animation" },
+  { name: "Documentary", slug: "documentary" },
+  { name: "Family", slug: "family" },
 ];
 
 const seedDB = async () => {
